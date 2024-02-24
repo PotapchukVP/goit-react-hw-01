@@ -18,7 +18,8 @@ export default function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList>{friends}</FriendList>
+
+      <FriendList friends={friends} />
       <TransactionHistory transactions={transactions} />
     </div>
   );
