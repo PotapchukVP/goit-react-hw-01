@@ -1,0 +1,30 @@
+.container {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border: 2px solid #181818;
+  text-transform: capitalize;
+}
+
+th {
+  background-color: #212121;
+  color: #ffffff;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: #b4b2b2;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}

@@ -1,0 +1,94 @@
+/* * {
+  outline: solid 1px red;
+} */
+
+body {
+  color: black;
+  font: "Helvetica";
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+.commonContainer {
+  width: 820px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  border: 3px #343333 solid;
+  background-color: white;
+  overflow: hidden;
+}
+
+.profileContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.personInfoWrapper {
+  height: 250px;
+  font-size: 45px;
+  font-weight: regular;
+  color: #808080;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.maskAvatar {
+  width: 300px;
+  height: 300px;
+  margin-top: 35px;
+  margin-bottom: 60px;
+  border-radius: 50%;
+  background-color: #2a2a2a;
+}
+
+.personName {
+  font-size: 56px;
+  font-weight: bold;
+  color: black;
+}
+
+.metricWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border-top: 3px solid #8d8d8d;
+  height: 230px;
+  background-color: #d3d3d3;
+  padding: 0;
+}
+
+.metricItem {
+  display: flex;
+  width: calc(100% / 3);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  font-weight: 300;
+  color: #000000;
+  position: relative;
+}
+
+.metricItem:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 100%;
+  transform: translateY(0%);
+  height: 100%;
+  border-right: 3px solid #8d8d8d;
+}
+.count {
+  font-size: 45px;
+  color: black;
+  font-weight: bold;
+}
